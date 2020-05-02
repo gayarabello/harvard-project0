@@ -1,0 +1,50 @@
+body {
+  font-family: Heebo;
+}
+
+ul > li {
+  list-style: none;
+  padding: 0.25rem;
+}
+
+.todo::before {
+  content: "[   ]";
+}
+
+.done::before {
+  content: "[X]";
+}
+
+a {
+  color: #4287f5 !important;
+  text-decoration: none !important;
+  padding: 1rem;
+}
+
+a:hover {
+  color: #4287f5 !important;
+  background-color: rgba(66, 135, 245, 0.1) !important;
+}
+
+h1 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 16px auto !important;
+  width: 300px;
+  text-align: center;
+}
+
+.content {
+  width: 750px;
+  margin: 16px auto !important;
+}
+/*# sourceMappingURL=styles.css.map */

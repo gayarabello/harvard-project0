@@ -1,0 +1,47 @@
+$blue: #4287f5;
+$lightblue: #4287f520;
+
+body {
+  font-family: Heebo;
+}
+ul > li {
+  list-style: none;
+  padding: 0.25rem;
+}
+
+.todo::before {
+  content: "[   ]";
+}
+
+.done::before {
+  content: "[X]";
+}
+
+a {
+  color: $blue !important;
+  text-decoration: none !important;
+  padding: 1rem;
+}
+
+a:hover {
+  color: $blue !important;
+  background-color: rgba($blue, 0.1) !important;
+}
+
+h1 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px auto !important;
+  width: 300px;
+  text-align: center;
+}
+
+.content {
+  width: 750px;
+  margin: 16px auto !important;
+}
