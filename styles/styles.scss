@@ -1,5 +1,20 @@
+$purple: #955ef2;
 $blue: #4287f5;
 $lightblue: #4287f520;
+$darkgrey: #222;
+$grey3: #828282;
+
+@media (max-width: 600px) {
+  body {
+    background-color: $darkgrey !important;
+    color: white !important;
+  }
+}
+@media (min-width: 600px) {
+  body {
+    background-color: white;
+  }
+}
 
 body {
   font-family: Heebo;
@@ -7,6 +22,31 @@ body {
 ul > li {
   list-style: none;
   padding: 0.25rem;
+}
+
+tr {
+  padding: 2rem 2rem;
+}
+
+th,
+td {
+  padding: 0.5rem 2rem;
+}
+
+th {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 150%;
+  color: $grey3;
+}
+
+.odd {
+  background-color: rgba($grey3, 0.04);
+}
+
+table {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.14);
+  padding: 1rem;
 }
 
 .todo::before {
@@ -33,7 +73,7 @@ h1 {
   margin: 0 auto;
 }
 
-.menu {
+#menu {
   display: flex;
   justify-content: space-between;
   margin: 16px auto !important;
@@ -44,4 +84,26 @@ h1 {
 .content {
   max-width: 750px;
   margin: 16px auto !important;
+}
+
+.crazy-title {
+  max-width: 300px;
+  font-weight: 900;
+  font-size: 5rem;
+  line-height: 120%;
+  letter-spacing: 0.76em;
+  color: #333333;
+}
+
+.love {
+  color: $purple;
+}
+
+.love-items::before {
+  content: "";
+  background: $purple;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 5px;
 }

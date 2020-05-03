@@ -1,3 +1,16 @@
+@media (max-width: 600px) {
+  body {
+    background-color: #222 !important;
+    color: white !important;
+  }
+}
+
+@media (min-width: 600px) {
+  body {
+    background-color: white;
+  }
+}
+
 body {
   font-family: Heebo;
 }
@@ -5,6 +18,32 @@ body {
 ul > li {
   list-style: none;
   padding: 0.25rem;
+}
+
+tr {
+  padding: 2rem 2rem;
+}
+
+th,
+td {
+  padding: 0.5rem 2rem;
+}
+
+th {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #828282;
+}
+
+.odd {
+  background-color: rgba(130, 130, 130, 0.04);
+}
+
+table {
+  -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.14);
+          box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.14);
+  padding: 1rem;
 }
 
 .todo::before {
@@ -31,7 +70,7 @@ h1 {
   margin: 0 auto;
 }
 
-.menu {
+#menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,5 +85,27 @@ h1 {
 .content {
   max-width: 750px;
   margin: 16px auto !important;
+}
+
+.crazy-title {
+  max-width: 300px;
+  font-weight: 900;
+  font-size: 5rem;
+  line-height: 120%;
+  letter-spacing: 0.76em;
+  color: #333333;
+}
+
+.love {
+  color: #955ef2;
+}
+
+.love-items::before {
+  content: "";
+  background: #955ef2;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 5px;
 }
 /*# sourceMappingURL=styles.css.map */
